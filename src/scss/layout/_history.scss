@@ -1,0 +1,188 @@
+.history{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include media(992){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include media(575){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 23px;
+        @include media(768){
+            font-size: 19px;
+            line-height: 21px;
+            color: #000;
+            margin-bottom: 17px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+    &__top{
+        background: #D3E4F5;
+        border-radius: 8px 8px 0px 0px;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include media(575){
+            padding: 12px 14px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #313131;
+        @include media(575){
+            font-size: 12px;
+        }
+        span{
+            font-weight: 500;
+        }
+        &:not(:last-of-type){
+            margin-right: 35px;
+            @include media(575){
+                margin-right: 14px;
+            }
+        }
+    }
+    &__content{
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 12px;
+    }
+    &__row{
+        background: #FFFFFF;
+        border: 0.3px solid #D2D2D2;
+        border-radius: 8px;
+        padding: 26px 55px 22px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1200){
+            gap: 20px;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        @include media(992){
+            flex-wrap: wrap;
+        }
+        @include media(768){
+            justify-content: flex-start;
+            column-gap: 50px;        
+        }
+        @include media(575){
+            padding: 12px;
+            row-gap: 10px;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 20px;
+        }
+    }
+    &__img{
+        @include media(1200){
+            min-width: 60px;
+            width: 60px;
+            line-height: 0;
+        }
+        img{
+            width: 100%;
+            line-height: 0;
+        }
+    }
+    &__item{
+        @include media(992){
+            width: max-content;
+        }
+        @include media(575){
+            width: 100%;
+        }
+        &_1{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            @include media(575){
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 12px;
+            }
+            .history__text{
+                max-width: 370px;
+                width: 100%;
+                @include media(1200){
+                    max-width: 300px;
+                }
+                @include media(768){
+                    max-width: 100%;
+                }
+            }
+        }
+        &_2{
+            .history__text{
+                max-width: 155px;
+                width: 100%;
+                @include media(992){
+                    max-width: 192px;
+                }
+                @include media(575){
+                    max-width: 100%;
+                }
+            }
+        }
+        &_3{
+            margin-top: -13px;
+            @include media(1200){
+                margin-top: 0;
+            }
+        }
+    }
+    &__subtitle{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 8px;
+        @include media(575){
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+        @include media(575){
+            font-size: 12px;
+        }
+    }
+    &__btn{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        padding: 12px 52px;
+        background: #7AAA67;
+        border-radius: 5.97183px;
+        transition: 300ms ease;
+        @include media(575){
+            font-size: 14px;
+            padding: 7px 42px;
+        }
+        &:hover{
+            background: darken($color: #7AAA67, $amount: 5);
+        }
+    }
+}
