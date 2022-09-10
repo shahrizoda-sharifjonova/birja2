@@ -1,3 +1,60 @@
 mixin header()
-    header.header 
-        p header
+    header.header
+        nav.header__nav.container 
+            a(href="index.html").header__logo #[img(src="@img/logo.png", alt="" draggable="false" loading="lazy")] Имяпроекта.ру
+            .header__right
+                ul.header__list 
+                    li.header__li   
+                        a(href="index.html").header__link Главная
+                    li.header__li   
+                        a(href="#!").header__link Мои заказы
+                    li.header__li   
+                        a(href="#!").header__link Сообщения
+                    li.header__li   
+                        a(href="#!").header__link Рейтинг
+                .header__content 
+                    .header__buttons 
+                        a(href="filter.html").header__btn Разместить заказ               
+                        a(href="cabinet.html").header__btn.header__btn_2 Кабинет исполнителя
+                    .header__icons 
+                        .header__icon
+                            button(type="button").header__icon-button 
+                                img(src="@img/header-user.svg", alt="")
+                            .header__icon-content 
+                                p.header__icon-name Здравствуйте, #[span.name Иванов Иван] 
+                                ul.header__icon-list 
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Добавить заказ   
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Мои заказы
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Списки исполнителей
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Моя страница   
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Сообщения   
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Финансы   
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Настройки   
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Партнёрская программа 
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Служба поддержки   
+                                    li.header__icon-li 
+                                        a(href="#!").header__icon-link Кабинет исполнителя 
+                        .header__icon.mail
+                            button(type="button").header__icon-button 
+                                img(src="@img/header-mail.svg", alt="")
+                            .header__icon-content 
+                                p.header__icon-name #[span 5] непрочитанных сообщений   
+                        .header__icon
+                            button(type="button").header__icon-button 
+                                img(src="@img/header-card.svg", alt="")
+                            .header__icon-content 
+                                .header__icon-row 
+                                    p.header__icon-name Баланс: #[span 1 200] рублей
+                                    a(href="#!").header__icon-a Пополнить
+            .menu   
+                span.menu-btn
+    .header__icon-close
