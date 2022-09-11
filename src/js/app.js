@@ -37,3 +37,21 @@ headerIconClose.addEventListener('click', (e)=>{
     })
     headerIconClose.classList.remove('active')
 })
+
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelectorAll('.popup__close');
+const openPopup = document.querySelectorAll('.open-popup');
+
+openPopup.forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+        popup.classList.toggle('active')
+        body.classList.toggle('hidden')
+    })
+})
+
+popupClose.forEach(close=>{
+    close.addEventListener('click', (e)=>{
+        popup.classList.remove('active')
+        body.classList.remove('hidden')
+    })
+})
