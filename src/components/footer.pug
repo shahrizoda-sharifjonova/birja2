@@ -1,2 +1,15 @@
 mixin footer()
-    footer.footer
+    footer.footer 
+        .footer__body.container 
+            .footer__left
+                a(href="index.html").footer__logo #[img(src="@img/logo-light.png", alt="" draggable="false" loading="lazy")] Имяпроекта.ру
+                p.footer__desc Сайт может содержать материалы для лиц старше 18 лет. Используя сайт вы полностью и безоговорочно принимаете оферту и политику обработки персональных данных.
+            .footer__icons 
+                a(href="https://telegram.com").footer__icon 
+                    img(src="@img/telegram.svg", alt="") 
+                a(href="https://vk.com").footer__icon 
+                    img(src="@img/vk.svg", alt="") 
+                a(href="https://twitter.com").footer__icon 
+                    img(src="@img/twitter.svg", alt="") 
+                a(href="https://instagram.com").footer__icon 
+                    img(src="@img/instagram.svg", alt="")

@@ -1,1 +1,64 @@
-// Футер
+.footer{
+    background: #313040;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    @include media(575){
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    &__body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        column-gap: 50px;
+        @include media(575){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+    }
+    &__left{
+        @include media(575){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        font-weight: 700;
+        font-size: 12.5px;
+        line-height: 15px;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+        @include media(575){
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    &__desc{
+        max-width: 370px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        @include media(575){
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__icons{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+        @include media(575){
+            margin-top: 0;
+        }
+    }
+}
